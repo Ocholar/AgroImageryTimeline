@@ -12,3 +12,18 @@ AgroImageryTimeline is a project designed to visualize agricultural imagery over
 - **Time-Series Visualization**: Interactive timeline of imagery data.
 - **Data Integration**: Supports prepared dataset for real-time updates.
 - **Customizable**: Easily extendable for new imagery sources or analytics.
+
+## 🌦️ Seasonal Brief: AgroImagery Timeline Insights
+
+Analyzed **73,921 satellite images** tagged with four crop seasons using their capture dates.
+
+### Season Cycles
+
+| Season Label       | Months            | Description                        |
+|--------------------|-------------------|------------------------------------|
+| Long Rains         | March–May         | Peak planting and early growth 🌱 |
+| Cold/Dry Spell     | June–August       | Dormant or low vegetation ❄️       |
+| Short Rains        | September–November| Secondary planting season 🌧️      |
+| Hot/Dry Spell      | December–February | Drought or prep season 🔥          |
+
+Each image is now tagged with a `season`, helping to analyze crop phases, plan field visits, and track seasonal patterns from space 🛰️✨
