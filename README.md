@@ -2,6 +2,10 @@
 
 An agronomic dashboard designed to visualize SOP-calibrated maize yield across East African campaigns using imagery insights, field-level analytics, and seasonal comparisons. Built with Python + Plotly Dash, it empowers agricultural teams to make data-driven decisions rooted in real performance.
 
+[![GitHub license](https://img.shields.io/github/license/Ocholar/AgroImageryTimeline)](https://github.com/Ocholar/AgroImageryTimeline/blob/main/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/Ocholar/AgroImageryTimeline)](https://github.com/Ocholar/AgroImageryTimeline/commits/main)
+[![Open Issues](https://img.shields.io/github/issues/Ocholar/AgroImageryTimeline)](https://github.com/Ocholar/AgroImageryTimeline/issues)
+
 ---
 
 ## 🌍 How This Dashboard Supports the Community
@@ -59,6 +63,31 @@ MaizeYieldMonitor/
 ├── README.md
 
 ---
-## Dashboard Preview
+## 📸 Dashboard Previews
 
 ![Dashboard Preview](MaizeYieldMonitor/assets/preview.png)
+
+### 🎯 Dashboard Overview
+![Dashboard Overview](assets/preview1.png)
+
+### 🌾 Yield Analytics Panel
+![Yield Analytics](assets/preview2.png)
+
+## 🔍 Summary Panel
+Displays average estimated yield, yield per acre, and sample size for selected season.
+
+## 🌱 Leaderboard Visualization
+Ranks seed varieties based on yield performance across field samples.
+
+## 🧮 Data Table Insights
+Tabulates variety-level averages with sample counts for granular analysis.
+
+---
+
+## Tech Stack Badge Row
+
+![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
+![Dash](https://img.shields.io/badge/Dash-Plotly-orange.svg)
+![Pandas](https://img.shields.io/badge/Pandas-DataFrame-success.svg)
+
+
