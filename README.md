@@ -49,6 +49,7 @@ An agronomic dashboard designed to visualize SOP-calibrated maize yield across E
 ---
 
 ## 📁 Folder Structure
+
 MaizeYieldMonitor/
 ├── app.py
 ├── data/
@@ -59,4 +60,5 @@ MaizeYieldMonitor/
 
 ---
 ## Dashboard Preview
-![Dashboard Preview](MaizeYieldMonitor/assets/preview1.png)
+
+![Dashboard Preview](MaizeYieldMonitor/assets/preview.png)
