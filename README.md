@@ -57,3 +57,4 @@ MaizeYieldMonitor/
 │   └── preview1.png, preview2.png, yieldmetricscalculations.sql
 ├── README.md
 
+![Dashboard Preview](MaizeYieldMonitor/assets/preview1.png)
