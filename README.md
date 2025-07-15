@@ -73,6 +73,8 @@ MaizeYieldMonitor/
 ### 🌾 Yield Analytics Panel
 ![Yield Analytics](assets/preview2.png)
 
+---
+
 ## 🔍 Summary Panel
 Displays average estimated yield, yield per acre, and sample size for selected season.
 
