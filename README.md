@@ -1,31 +1,59 @@
-# AgroImageryTimeline
-A query (SQL + Python) based analytics project to analyze agricultural imagery timeline for maize crop monitoring
+# 🌽 Maize Yield Monitor Dashboard
 
-[![GitHub license](https://img.shields.io/github/license/Ocholar/AgroImageryTimeline)](https://github.com/Ocholar/AgroImageryTimeline/blob/main/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/Ocholar/AgroImageryTimeline)](https://github.com/Ocholar/AgroImageryTimeline/commits/main)
-[![Open Issues](https://img.shields.io/github/issues/Ocholar/AgroImageryTimeline)](https://github.com/Ocholar/AgroImageryTimeline/issues)
+An agronomic dashboard designed to visualize SOP-calibrated maize yield across East African campaigns using imagery insights, field-level analytics, and seasonal comparisons. Built with Python + Plotly Dash, it empowers agricultural teams to make data-driven decisions rooted in real performance.
 
-## Overview
-AgroImageryTimeline is a project designed to visualize agricultural imagery over time, leveraging data to track changes in crop health, growth stages, and environmental conditions. This repo aims to provide a timeline-based analysis tool for farmers, researchers, and agritech enthusiasts.
+---
 
-## Features
-- **Time-Series Visualization**: Interactive timeline of imagery data.
-- **Data Integration**: Supports prepared dataset for real-time updates.
-- **Customizable**: Easily extendable for new imagery sources or analytics.
+## 🌍 How This Dashboard Supports the Community
 
-## 🌦️ Seasonal Brief: AgroImagery Timeline Insights
+- 🔎 **Early Performance Detection**: Identify underperforming seed varieties across seasons or regions.
+- 🧪 **Quality Yield Diagnostics**: Correlate image quality with crop output for smarter data usage.
+- 📦 **Outlier Monitoring**: Flag unusually high or low yields for further field review.
+- 📈 **Data-Driven Planning**: Track yield improvements, optimize variety selection, and compare countries.
+- 📊 **Farmer-Level Insights**: Assess real field samples to inform operational strategy and input distribution.
 
-Analyzed **73,921 satellite images** tagged with four crop seasons using their capture dates.
+---
 
-### 📊 Seasonal Cycles & Imagery Distribution
+## 🎯 Project Objectives
 
-| Season Label       | Months            | Description                        | Image Count |
-|--------------------|-------------------|------------------------------------|-------------|
-| Long Rains         | March–May         | Peak planting and early growth 🌱 | 0           |
-| Cold/Dry Spell     | June–August       | Dormant or low vegetation ❄️       | 73,921      |
-| Short Rains        | September–November| Secondary planting season 🌧️      | 0           |
-| Hot/Dry Spell      | December–February | Drought or prep season 🔥          | 0           |
+- Normalize plot-level yield per acre using SOP-calibrated estimates  
+- Compare performance across seed varieties and countries  
+- Visualize image quality impact on yield outcomes  
+- Detect statistical outliers for plot-level auditing  
+- Prepare seasonal briefs that inform field strategy
 
-🧠 Note: All imagery currently falls within **Cold/Dry Spell (June–August)**, suggesting seasonal concentration or availability bias in captured data. Timeline can be expanded by integrating imagery from additional seasons or sources.
+---
 
-Each image is now tagged with a `season`, helping to analyze crop phases, plan field visits, and track seasonal patterns from space 🛰️✨
+## 🛠️ Methodology
+
+- Built with `Dash`, `Pandas`, and `Plotly`
+- Inputs a curated `yield_metrics.csv` derived from large-scale agronomic SOP workflows
+- Season-based filtering enables targeted insights
+- Interactive charts, summary cards, and diagnostic tables built from raw field metrics
+
+---
+
+## 📊 Dashboard Outputs
+
+| Module                        | Description                                |
+|------------------------------|--------------------------------------------|
+| 🔎 Summary Card              | Avg yield & sample size per season         |
+| 🌱 Variety Leaderboard       | Ranked bar chart of yield/acre             |
+| 🌍 Country Comparison        | Avg performance across countries           |
+| 🎯 Quality vs Yield Scatter | Relates image score to yield metrics       |
+| 🧮 Variety Comparison Table  | Avg yield + sample size per variety        |
+| ⚠️ Outlier Flag              | Flags plots with yield/acre <300 or >1200  |
+| 📥 CSV Export *(upcoming)*   | Filtered downloads by season               |
+| 🖼️ Image Preview *(upcoming)*| Tooltip previews by `ImgID`                |
+
+---
+
+## 📁 Folder Structure
+MaizeYieldMonitor/
+├── app.py
+├── data/
+│   └── yield_metrics.csv
+├── assets/
+│   └── preview1.png, preview2.png, yieldmetricscalculations.sql
+├── README.md
+
